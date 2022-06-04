@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(./fonts/DS-DIGIB.TTF);
+}
+@font-face {
+    font-family: 'NoWay';
+    src: url(./fonts/noway-regular-webfont.ttf);
+}
+:root {
+    --gbGray: #c3bfbc;
+    --gbDarkGray: #8f8d92;
+    --gbGreen: #899e59;
+    --gbRed: #8c315d;
+    --gbBlack: #2f2f2f;
+    --gbBlue: #42447d;
+}
+
+body {
+    background-color: var(--gbGray);
+    margin: 0;
+    font-family: 'NoWay', Courier, monospace;
+}
+
+#main-container {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header-container {
+    color: var(--gbBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gbGray);
+    font-size: 1.2rem;
+    font-weight: 50px;
+}
+
+#counter-container {
+    border-radius: 5px;
+    background-color: var(--gbDarkGray);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 320px;
+}
+
+#time-container {
+    font-family: 'Digital', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(130, 126, 126);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#timer {
+    font-size: 1.2rem;
+    margin-bottom: -22px;
+}
+#date {
+    font-size: 1.4rem;
+}
+
+#counter-text {
+    display: flex;
+    gap: 20px;
+}
+#monthHeader,
+#extraHeader {
+    color: black;
+    margin-top: 30px;
+}
+
+#monthCount,
+#extraCount {
+    margin-top: 0px;
+    font-family: 'Digital', Courier, monospace;
+    font-size: 60px;
+    color: black;
+}
+
+.counter-box {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gbGreen);
+    border-radius: 10px;
+}
+#counter-buttons {
+    display: flex;
+    gap: 50px;
+}
+button {
+    background-color: var(--gbRed);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+#grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    padding: 20px;
+    padding-top: 6px;
+    background-color: aqua;
+}
+
+.grid-row {
+    gap: 10px;
+    display: flex;
+}
+
+.grid {
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 80px;
+    font-size: 1.4rem;
+    font-weight: 100%;
+    color: white;
+}
+
+.fa-check {
+    font-size: 30px;
+    color: rgb(48, 225, 48);
+}
+.fa-xmark {
+    font-size: 30px;
+    color: red;
+}
+
+.checkMark {
+    width: 40px;
+}
+.date {
+    width: 63px;
+}
+.monthPay {
+}
+.extra {
+}
+.paid {
+}

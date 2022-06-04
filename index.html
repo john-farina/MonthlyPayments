@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Monthly Payments</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./payment.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/4c3322bec2.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="header-container">
+                <h1>MONTHLY PAYMENTS</h1>
+            </div>
+            <div id="counter-container">
+                <div id="time-container">
+                    <h3 id="timer">00:00:00 PM</h3>
+                    <h3 id="date">$$$$ 0</h3>
+                </div>
+                <div id="counter-text">
+                    <div class="counter-box">
+                        <h3 id="monthHeader">Monthly</h3>
+                        <h1 id="monthCount">$285</h1>
+                    </div>
+                    <div class="counter-box">
+                        <h3 id="extraHeader">Extra</h3>
+                        <h1 id="extraCount">$70</h1>
+                    </div>
+                </div>
+                <div id="counter-buttons">
+                    <button id="payButton"><h3>PAY</h3></button>
+                    <button id="addButton"><h1>+</h1></button>
+                </div>
+            </div>
+        </div>
+        <div id="grid-container">
+            <div class="grid-row">
+                <div class="grid checkMark">
+                    <i class="fa-solid fa-check"></i>
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                </div>
+                <div class="grid date">DATE</div>
+                <div class="grid monthPay">MONTH</div>
+                <div class="grid extra">EXTRA</div>
+                <div class="grid paid">PAID</div>
+            </div>
+        </div>
+    </body>
+</html>
